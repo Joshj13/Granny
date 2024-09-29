@@ -6,79 +6,88 @@
     <title>HGS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-    <img src="./img/Screenshot 2024-09-29 at 14-54-27 picsartai aigenerated freeforbusiness image by @ai_generated.png">
-    <img src="./img/Screenshot 2024-09-29 at 14-54-47 picsartai aigenerated freeforbusiness image by @ai_generated.png">    
-    <img src="./img/Screenshot 2024-09-29 at 14-55-13 picsartai aigenerated freeforbusiness image by @ai_generated.png">
-    <img src="./img/Screenshot 2024-09-29 at 14-55-35 picsartai aigenerated freeforbusiness image by @ai_generated.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-04-31 picsartai aigenerated freeforbusiness image by @ai_generated.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-06-03 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-06-13 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-06-13 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-06-21 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
-    <img src="./img/Screenshot 2024-09-29 at 15-06-21 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
-    <img src="./img/motivational-poster-hand-pointing-you-finger-viewer-front-listen-text-vector-color-vintage-engraved-91855324.jpg" alt="">
-    <!-- Image of the disappointed granny -->
-    <img id="milfImage" src="./img/cancel.png" alt="Disappointed Granny">
+    <!-- Main content container -->
+    <div id="mainContent">
+        <img src="./img/Screenshot 2024-09-29 at 14-54-27 picsartai aigenerated freeforbusiness image by @ai_generated.png">
+        <img src="./img/Screenshot 2024-09-29 at 14-54-47 picsartai aigenerated freeforbusiness image by @ai_generated.png">    
+        <img src="./img/Screenshot 2024-09-29 at 14-55-13 picsartai aigenerated freeforbusiness image by @ai_generated.png">
+        <img src="./img/Screenshot 2024-09-29 at 14-55-35 picsartai aigenerated freeforbusiness image by @ai_generated.png">
+        <img src="./img/Screenshot 2024-09-29 at 15-04-31 picsartai aigenerated freeforbusiness image by @ai_generated.png">
+        <img src="./img/Screenshot 2024-09-29 at 15-06-03 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
+        <img src="./img/Screenshot 2024-09-29 at 15-06-13 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
+        <img src="./img/Screenshot 2024-09-29 at 15-04-51 picsartai aigenerated image by @ai_generated.png">
+        <img src="./img/Screenshot 2024-09-29 at 15-06-21 Granny Images – Browse 1 143 966 Stock Photos Vectors and Video Adobe Stock.png">
+        <img src="./img/Screenshot 2024-09-29 at 14-55-35 picsartai aigenerated freeforbusiness image by @ai_generated.png">
+        <img src="./img/motivational-poster-hand-pointing-you-finger-viewer-front-listen-text-vector-color-vintage-engraved-91855324.jpg" alt="">
+        <!-- Image of the disappointed granny -->
+        <img id="milfImage" src="./img/cancel.png" alt="Disappointed Granny">
+    </div>
 
     <script>
-      // Reset the image visibility on page load
-function resetImage() {
-    var img = document.getElementById("milfImage");
-    img.classList.remove("animate"); // Remove the animation class
-    img.style.opacity = 0; // Ensure it's transparent
-    img.style.transform = "translate(-50%, -50%) scale(0.1)"; // Reset scale
-}
-
-// Hide the image when the page loads
-window.onload = function() {
-    resetImage(); // Call the reset function
-
-    // Check if the user has already been asked about their age
-    if (!sessionStorage.getItem("ageConfirmed")) {
-        // First confirmation dialog
-        confirm("Do you want love?💖💖");
-
-        // Second confirmation dialog with action
-        var p = prompt("How Old Are You?", "");
-        if (p !== null) { // Check if the user didn't press "Cancel"
-            var age = parseInt(p); // Convert the input to an integer
-
-            if (isNaN(age)) {
-                alert("Please enter a valid number.");
-                // Optionally ask again or take other action
-                window.location.reload(); // Reload to ask again
-            } else if (age < 18) {
-                alert("You are not allowed to enter this site.");
-                // Redirect to a blank page or a "not allowed" page
-                window.location.href = "about:blank"; // Redirect to a blank page
-                // Alternatively, you can redirect to a custom "not allowed" page:
-                window.location.href = "./not-allowed.html"; // Uncomment to redirect to a specific page
-            } else {
-                alert("Welcome!");
-                // Set a flag in session storage to remember the user has confirmed their age
-                sessionStorage.setItem("ageConfirmed", true);
-
-                // If they are 18 or older, show the next prompt
-                var confirmSending = confirm("Cancel or send milfs😈??");
-                
-                if (confirmSending) {
-                    // If "OK" is pressed, show an alert
-                    alert("Sending milfs your way. Please press \"ok\"");
-                } else {
-                    // If "Cancel" is pressed, show the disappointed granny
-                    alert('You clicked "cancel😭😭"');
-
-                    // Get the image element and add the animate class to trigger the animation
-                    var img = document.getElementById("milfImage");
-                    img.classList.add("animate");
-                }
-            }
+        // Reset the image visibility on page load
+        function resetImage() {
+            var img = document.getElementById("milfImage");
+            img.classList.remove("animate"); // Remove the animation class
+            img.style.opacity = 0; // Ensure it's transparent
+            img.style.transform = "translate(-50%, -50%) scale(0.1)"; // Reset scale
         }
-    }
-};
 
+        // Hide the image when the page loads
+        window.onload = function() {
+            resetImage(); // Call the reset function
+
+            // Check if the user has already been asked about their age
+            if (!sessionStorage.getItem("ageConfirmed")) {
+                // First confirmation dialog
+                confirm("Do you want love?💖💖");
+
+                // Second confirmation dialog with action
+                var p = prompt("How Old Are You?", "");
+                if (p !== null) { // Check if the user didn't press "Cancel"
+                    var age = parseInt(p); // Convert the input to an integer
+
+                    if (isNaN(age)) {
+                        alert("Please enter a valid number.");
+                        // Optionally ask again or take other action
+                        window.location.reload(); // Reload to ask again
+                    } else if (age < 18) {
+                        alert("You are not allowed to enter this site.");
+                        // Redirect to a blank page or a "not allowed" page
+                        window.location.href = "about:blank"; // Redirect to a blank page
+                        // Alternatively, you can redirect to a custom "not allowed" page:
+                        // window.location.href = "./not-allowed.html"; // Uncomment to redirect to a specific page
+                    } else {
+                        alert("Welcome!");
+                        // Set a flag in session storage to remember the user has confirmed their age
+                        sessionStorage.setItem("ageConfirmed", true);
+
+                        // Show the main content since the user is of age
+                        document.getElementById("mainContent").style.display = "block";
+
+                        // If they are 18 or older, show the next prompt
+                        var confirmSending = confirm("Cancel or send milfs😈??");
+                        
+                        if (confirmSending) {
+                            // If "OK" is pressed, show an alert
+                            alert("Sending milfs your way. Please press \"ok\"");
+                        } else {
+                            // If "Cancel" is pressed, show the disappointed granny
+                            alert('You clicked "cancel😭😭"');
+
+                            // Get the image element and add the animate class to trigger the animation
+                            var img = document.getElementById("milfImage");
+                            img.classList.add("animate");
+                        }
+                    }
+                }
+            } else {
+                // Show the main content if age has already been confirmed
+                document.getElementById("mainContent").style.display = "block";
+            }
+        };
     </script>
 </body>
 </html>

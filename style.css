@@ -38,11 +38,38 @@
     }
 }
 
-body {
-    margin: 0; /* Remove default margin */
-    height: 100vh; /* Ensure the body takes up the full height */
-    background-image: url('./img/background.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+#mainContent {
+    display: none; /* Hide by default */
+    display: grid; /* Use grid layout for scattering images */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+    padding: 10px; /* Padding around the grid */
 }
+
+/* Style for each image */
+#mainContent img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+/* Style for the underage message */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+}
+
+h1 {
+    color: red; /* Red color for the title */
+}
+
+p {
+    color: black; /* Black color for the text */
+}
+
+/* Add any other styles you want here */
