@@ -37,3 +37,12 @@
         width: 90vw; /* More width for smaller screens */
     }
 }
+
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure the body takes up the full height */
+    background-image: url('./img/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
