@@ -47,6 +47,16 @@
 }
 
 /* Style for each image */
+  /* Hide the main content by default */
+  #mainContent {
+    display: none; /* Hide by default */
+    display: grid; /* Use grid layout for scattering images */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+    padding: 10px; /* Padding around the grid */
+}
+
+/* Style for each image */
 #mainContent img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
