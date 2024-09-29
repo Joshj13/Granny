@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGS!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Fade Example</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Image of the disappointed granny -->
+        <img id="milfImage" src="./img/cancel.png" alt="Disappointed Granny">
+    
+        <script>
+            // Reset the image visibility on page load
+            function resetImage() {
+                var img = document.getElementById("milfImage");
+                img.classList.remove("animate"); // Remove the animation class
+                img.style.opacity = 0; // Ensure it's transparent
+                img.style.transform = "translate(-50%, -50%) scale(0.1)"; // Reset scale
+            }
+    
+          // Hide the image when the page loads
+          window.onload = function() {
+            hideImage();
+        };
+    
+            // First confirmation dialog
+            confirm("Do you want love?💖💖");
+    
+            // Second confirmation dialog with action
+            var c = confirm("Cancel or send milfs😈??");
+    
+            if (c) {
+                // If "OK" is pressed, show an alert
+                alert("Sending milfs your way. Please press \"ok\"");
+            } else {
+                // If "Cancel" is pressed, show the disappointed granny
+                alert('You clicked "cancel😭😭"');
+    
+                // Get the image element and add the animate class to trigger the animation
+                var img = document.getElementById("milfImage");
+                img.classList.add("animate");
+            }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+#milfImage {
+    opacity: 0; /* Start fully transparent */
+    position: fixed; /* To make it cover the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start small and centered */
+    width: 100vw; /* Image will eventually cover the screen */
+    height: auto;
+    z-index: 999; /* Make sure it appears on top */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Animation for fading in and enlarging */
+@keyframes fadeInGrow {
+    0% {
+        transform: translate(-50%, -50%) scale(0.1); /* Start tiny */
+        opacity: 0; /* Fully transparent */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Full size to cover screen */
+        opacity: 1;
+    }
+}
+
+/* Class to trigger the animation */
+.animate {
+    opacity: 1; /* Make the image visible */
+    animation: fadeInGrow 3s ease-in-out forwards; /* Animation duration is 3 seconds */
+}
+
+  /* Media Queries for additional responsiveness */
+  @media (max-width: 600px) {
+    #milfImage {
+        width: 90vw; /* More width for smaller screens */
+    }
+}
